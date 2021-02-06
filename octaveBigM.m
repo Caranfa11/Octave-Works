@@ -3,10 +3,10 @@ fprintf("Suponiendo Valor de M: \n");
 m = 100
 fprintf("\nMinimizar Z = 4*X1 + X2\n\nRestricciones:\n\t3X1 + X2 = 3\n\t 4X1 + 3X2 >= 6\n\tX1 + X2 <= 3\n\t X1 , X2 >= 0");
 fprintf("\n\nMatriz Inicial segun las restricciones:\n");
-matriz_inicio = [-4 + 7 * m, -1 + 4 * m, 0 , 0, -m, 0, 9*m; ##z
-                 1, 1/3, 1/3, 0, 0, 0, 1; ##x1
-                 4, 3, 0, 1, -1, 0, 6; ##x2
-                 1, 1, 0, 0, 0, 1, 3]; ##h1
+matriz_inicio = [-4 + 7 * m, -1 + 4 * m, 0 , 0, -m, 0, 9*m; #Z
+                 1, 1/3, 1/3, 0, 0, 0, 1;                   #X1
+                 4, 3, 0, 1, -1, 0, 6;                      #X2
+                 1, 1, 0, 0, 0, 1, 3];                      #h1
                  
 disp(matriz_inicio)
 fprintf("\n\n\n\t\tInicio de la Minimizacion\n\n");
